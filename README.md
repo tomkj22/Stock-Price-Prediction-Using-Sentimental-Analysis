@@ -1,5 +1,6 @@
 # Stock-Price-Prediction-Using-Sentimental-Analysis
 # Roadmap
+
 ### 1. **Define Project Goals**
 
 - [x] Specific objectives : predicting stock prices based on sentiment from tweets.
@@ -7,6 +8,7 @@
 ### 2. **Data Collection**
 
 - [x] **Stock Price Data**: Collecting dataset from [Kaggle](https://www.kaggle.com/code/taufiquesekh/stock-sentiment-analysis/input)
+- [x] **Loading and processing the Dataset**
 
 ### 3. **Data Preprocessing**
 
@@ -20,13 +22,12 @@
 ### 4. **Sentiment Analysis with BERT**
 
 - [x] **Model Selection**: Choose a pre- [ ]trained BERT model (e.g., `bert- [ ]base- [ ]uncased`).
-- [x] **Fine- [ ]Tuning**:
-  - [x] Fine- [ ]tune BERT on this dataset to classify sentiment.
-- [ ] **Feature Extraction**: Generate sentiment scores for the collected textual data.
+- [x] **Encoding Tweets** : Function to Preprocess Tweets: Implement a function to encode tweets for input into the BERT model. This function performs several key operations:
 
 ### 5. **Model Training for Stock Price Prediction**
 
-- [ ] **Split Data**: Divide your stock price data into training and test sets.
+- [x] **Split Data**: Divide your stock price data into training and test sets.
+- [x] **Plotting the train and test size in pie chart**
 - [ ] **Feature Engineering**: Integrate sentiment scores from BERT with stock price features.
 - [ ] **Model Training**:
   - [ ] **XGBoost**: Train an XGBoost model on the training set.
