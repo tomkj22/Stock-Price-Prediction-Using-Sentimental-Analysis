@@ -6,7 +6,7 @@
 
 ### 2. **Data Collection**
 
-- [x] **Stock Price Data**: Collecting dataset from (Kaggle)[https://www.kaggle.com/code/taufiquesekh/stock-sentiment-analysis/input]
+- [x] **Stock Price Data**: Collecting dataset from [https://www.kaggle.com/code/taufiquesekh/stock-sentiment-analysis/input](Kaggle)
 
 ### 3. **Data Preprocessing**
 
