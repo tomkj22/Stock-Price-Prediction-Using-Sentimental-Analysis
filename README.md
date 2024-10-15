@@ -3,7 +3,7 @@
 
 ### 1. **Define Project Goals**
 
-- [x] Specific objectives: {redicting stock prices based on sentiment from tweets.
+- [x] Specific objectives: Predicting stock prices based on sentiment from tweets.
 
 ### 2. **Data Collection**
 
