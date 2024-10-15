@@ -3,12 +3,12 @@
 
 ### 1. **Define Project Goals**
 
-- [x] Specific objectives : predicting stock prices based on sentiment from tweets.
+- [x] Specific objectives: {redicting stock prices based on sentiment from tweets.
 
 ### 2. **Data Collection**
 
 - [x] **Stock Price Data**: Collecting dataset from [Kaggle](https://www.kaggle.com/code/taufiquesekh/stock-sentiment-analysis/input)
-- [x] **Loading and processing the Dataset**
+- [x] **Loading and Processing the Dataset**
 
 ### 3. **Data Preprocessing**
 
