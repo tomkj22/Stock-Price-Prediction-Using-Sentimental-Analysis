@@ -3,47 +3,44 @@
 
 ### 1. **Define Project Goals**
 
-- [x] Specific objectives: Predicting stock prices based on sentiment from tweets.
-
+- [x] Specific objectives: Predicting stock prices based on sentiment from news headlines.
+      
 ### 2. **Data Collection**
 
+- [x] **India News Headlines**: Collecting dataset from [Kaggle](https://www.kaggle.com/datasets/therohk/india-headlines-news-dataset)
 - [x] **Stock Price Data**: Collecting dataset from [Kaggle](https://www.kaggle.com/code/taufiquesekh/stock-sentiment-analysis/input)
 - [x] **Loading and Processing the Dataset**
 
 ### 3. **Data Preprocessing**
 
-- [x] **Stock Price Data**:
-  - [x] Clean and format data (handle missing values, normalize prices).
-- [x] **Textual Data**:
-  - [x] Clean text (remove punctuation, stopwords, etc.).
-  - [x] Tokenize and encode text using BERT's tokenizer.
-  - [x] Create sentiment labels if necessary (positive, negative, neutral).
+- [x] **Load Data**: Import news headlines and stock data from CSV files.
+- [x] **Text Cleaning**: Clean headlines by converting to lowercase, removing non-alphanumeric characters, and eliminating stopwords.
+- [x] **Sentiment Analysis**: Calculate sentiment scores (compound, positive, neutral, negative) using NLTK's VADER sentiment analyzer.
+- [x] **Technical Indicators**: Compute stock indicators like SMA, EMA, MACD, RSI, and OBV to enhance feature set..
 
-### 4. **Sentiment Analysis with BERT**
+### 4. **Data Merging**
 
-- [x] **Model Selection**: Choose a pre- [ ]trained BERT model (e.g., `bert- [ ]base- [ ]uncased`).
-- [x] **Encoding Tweets** : Function to Preprocess Tweets: Implement a function to encode tweets for input into the BERT model. This function performs several key operations:
+- [x] **Merge Datasets**: Combine processed sentiment data with stock data using the date field, forming a unified dataset for modeling.
+      
+### 4. **Sentiment Analysis with NLTK’s VADER sentiment analyzer.**
 
-### 5. **Model Training for Stock Price Prediction**
+- [x] **Model Selection**: Choose a pre- [ ]trained VADER model
+- [x] **Encoding Tweets** : Function to Preprocess headlines: Implement a function to encode headlines for input into the VADER model. This function performs several key operations:
 
-- [x] **Split Data**: Divide your stock price data into training and test sets.
-- [x] **Plotting the train and test size in pie chart**
-- [ ] **Feature Engineering**: Integrate sentiment scores from BERT with stock price features.
-- [ ] **Model Training**:
-  - [ ] **XGBoost**: Train an XGBoost model on the training set.
-  - [ ] **LSTM**: Prepare sequences for LSTM and train the model.
-  - [ ] **Random Forest**: Train a Random Forest model using the combined features.
-- [ ] **Hyperparameter Tuning**: Use techniques like Grid Search or Random Search for optimal model parameters.
+### 3. **Rolling Window Forecasting**
 
-### 6. **Model Evaluation**
+- [x] **Set Window Size**: Define a rolling window size (e.g., 30 days) to train the model on past data for each prediction.
+- [x] **Feature Scaling**: Standardize feature values for model input using `StandardScaler`.
+- [x] **Model Training**: Utilize a `RandomForestRegressor` model to predict stock prices within each window.
 
-- [ ] Evaluate each model using appropriate metrics (RMSE, MAE).
-- [ ] Compare performance and select the best models.
-- [ ] Assess the importance of sentiment features in predictions.
+### 4. **Model Evaluation**
+
+- [x] **Calculate Metrics**: Assess model performance using MAE, RMSE, and R² scores to evaluate prediction accuracy.
+- [x] **Print Results**: Output performance metrics for a final view of the model’s accuracy.
 
 ### 7. **Ensemble Model Creation**
 
-- [ ] Combine predictions from XGBoost, LSTM, and Random Forest (e.g., via stacking or averaging).
+- [ ] Combine predictions from LSTM, and Random Forest (e.g., via stacking or averaging).
 - [ ] Test the ensemble model's performance against individual models.
 
 ### 8. **Deployment Preparation**
